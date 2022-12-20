@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div id="alert"></div>
+
+    <div class="container col-sm-8 mt-5">
+        <form action="" id="userForm">
+            <div class="mb-3">
+                <label for="username" class="form-label" >Kullanıcı Adı:</label>
+                <input type="text" name="username" id="username" class="form-control"><br><br>
+            </div>
+            <div class="mb-3">
+                <label for="score" class="form-label">Puan:</label>
+                <input type="number" name="score" id="score" class="form-control"><br><br>
+            </div>
+            <div class="mb-3">
+                <input type="reset" class="btn btn-danger" id="reset">
+                <input type="submit" class="btn btn-success" id="submit" onsubmit="submit(event)">
+            </div>
+
+        </form>
+    </div>
+    <div class="container col-sm-8 mt-5">
+        <ul class="list-group" id="userList">
+
+        </ul>
+
+    </div>
+
+
+
+
+    <!-- Genel Plan:
+        Form seçimi
+        Input Bilgisini UL içerisine ekle
+        Form içindeki bilgiyi sıfırla
+        Eğer forma bilgi girilmez ise kullanıcıyı uyar -->
+
+    <script src="js/01.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

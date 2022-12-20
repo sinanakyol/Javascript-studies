@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Başlığı</title>
+</head>
+<body>
+  <ul class="liste">
+    <li id="walterwhite">Walter White</li>
+    <li class="alternate">Jesse Pinkman</li>
+    <li>Skyler White</li>
+    <li class="alternate">Hank Schrader</li>
+    <li>Gustavo Fring</l>
+  </ul>
+
+  <input type="text" id="veri">
+<button id="ekle">Listeye Öğe Ekle</button>
+
+
+
+
+
+<!-- <script src="js/001-hello-world.js"></script> -->
+
+<script>
+
+  let one = document.querySelector("#walterwhite");
+
+  let two = document.querySelectorAll(".alternate");
+
+  for(let i=0; i<two.length; i++){
+    two[i].style.color="red";
+  }
+  
+  let liste = document.querySelector(".liste");
+
+  let ekle = document.querySelector("#ekle");
+
+  
+  function listele(){
+
+    let item=document.createElement("li");
+
+    item.textContent = veri.value;
+
+    liste.appendChild(item);
+
+    veri.value = "";
+  }
+
+  ekle.addEventListener("click", listele )
+
+
+
+</script>
+
+  </body>
+</html>
